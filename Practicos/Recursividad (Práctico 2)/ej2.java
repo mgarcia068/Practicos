@@ -2,7 +2,6 @@
 Escriba un método recursivo que reciba una cadena y devuelva la misma cadena invertida.
 Ejemplo: "recursivo" → "ovisrucer". */
 
-package Practicos.recursividad;
 import java.util.Scanner;
 
 public class ej2 {

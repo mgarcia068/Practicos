@@ -2,7 +2,6 @@
 Escriba una función recursiva que calcule cuántos dígitos tiene un número entero positivo.
 Ejemplo: 12345 → 5. */
 
-package Practicos.recursividad;
 import java.util.Scanner;
 
 public class ej1 {

@@ -4,15 +4,16 @@
     b) Identifique los desbalances (FE = ±2).
     c) Especifique cuándo corresponde rotación doble (LR o RL) y ejecútela.
 */
+package src;
 
-public class Main(){
+public class ej2 {
     public static void main(String[] args) {
         AVLTree arbol = new AVLTree();
 
         int[] valores = {30, 10, 20, 40, 35, 37};
 
         for(int val: valores){
-            arbol.insertar();
+            arbol.insertar(val);
             arbol.mostrar();
         }
     }

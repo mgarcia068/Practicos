@@ -3,7 +3,6 @@ Escriba un método recursivo que reciba un número entero positivo y devuelva su
 representación en binario (como string).
 Ejemplo: 13 → "1101". */
 
-package Practicos.recursividad;
 import java.util.Scanner;
 
 public class ej5 {
