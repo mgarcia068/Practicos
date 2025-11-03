@@ -8,16 +8,16 @@ package src;
 public class ej1 {
     public static void main(String[] args) {
         // Crear nodos
-        Nodo nodo1 = new Nodo(10);
-        Nodo nodo2 = new Nodo(20);
-        Nodo nodo3 = new Nodo(30);
+        NodoListaSimple nodo1 = new NodoListaSimple(10);
+        NodoListaSimple nodo2 = new NodoListaSimple(20);
+        NodoListaSimple nodo3 = new NodoListaSimple(30);
 
         // Enlazar nodos
         nodo1.siguiente = nodo2;
         nodo2.siguiente = nodo3;
 
         // Imprimir la lista completa
-        Nodo actual = nodo1;
+        NodoListaSimple actual = nodo1;
         while (actual != null) {
             System.out.println(actual.dato);
             actual = actual.siguiente;

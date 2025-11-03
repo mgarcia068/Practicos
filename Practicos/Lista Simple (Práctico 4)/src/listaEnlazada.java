@@ -1,20 +1,20 @@
 package src;
 
 public class listaEnlazada {
-    private Nodo cabeza;
+    private NodoListaSimple cabeza;
 
     public listaEnlazada() {
         this.cabeza = null;
     }
 
     public void insertarInicio(int dato) {
-        Nodo nuevoNodo = new Nodo(dato);
+        NodoListaSimple nuevoNodo = new NodoListaSimple(dato);
         nuevoNodo.siguiente = cabeza;
         cabeza = nuevoNodo;
     }
 
     public void imprimirLista() {
-        Nodo actual = cabeza;
+        NodoListaSimple actual = cabeza;
         while (actual != null) {
             System.out.println(actual.dato);
             actual = actual.siguiente;
@@ -22,11 +22,11 @@ public class listaEnlazada {
     }
 
     public void insertarFinal(int dato) {
-        Nodo nuevoNodo = new Nodo(dato);
+        NodoListaSimple nuevoNodo = new NodoListaSimple(dato);
         if (cabeza == null) {
             cabeza = nuevoNodo;
         } else {
-            Nodo actual = cabeza;
+            NodoListaSimple actual = cabeza;
             while (actual.siguiente != null) {
                 actual = actual.siguiente;
             }
@@ -44,7 +44,7 @@ public class listaEnlazada {
             return;
         }
 
-        Nodo actual = cabeza;
+        NodoListaSimple actual = cabeza;
         while (actual.siguiente != null && actual.siguiente.dato != valor) {
             actual = actual.siguiente;
         }
@@ -54,18 +54,18 @@ public class listaEnlazada {
         }
     }
 
-    public Nodo getCabeza() {
+    public NodoListaSimple getCabeza() {
         return cabeza;
     }
 
-    public void setCabeza(Nodo cabeza) {
+    public void setCabeza(NodoListaSimple cabeza) {
         this.cabeza = cabeza;
     }
 
     public void invertir() {
-        Nodo anterior = null;
-        Nodo actual = cabeza;
-        Nodo siguiente = null;
+        NodoListaSimple anterior = null;
+        NodoListaSimple actual = cabeza;
+        NodoListaSimple siguiente = null;
 
         while (actual != null) {
             siguiente = actual.siguiente; // Guardar el siguiente nodo
