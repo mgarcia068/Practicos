@@ -41,24 +41,4 @@ Este repositorio contiene **9 ejercicios prácticos realizados en Java**, diseñ
 - Programación orientada a objetos
 - Conceptos de recursividad y algoritmos básicos
 
----
-
-## Estructura del repositorio
-
-/Practicos
-│
-├─ Gestor de tareas (Práctico 1)/src
-├─ Gestión pizzeria (Práctico ordenamiento)/src
-├─ Recursividad (Práctico 2)/
-├─ Pila y Cola con Arreglo (Práctico 3)/src
-├─ Lista Simple (Práctico 4)/src
-├─ AVL (Práctico 5)/src
-├─ Arbol Rojinegro (Práctico 6)/src
-├─ Monticulo Binario (Práctico 7)/src
-└─ Práctico Integrador
-
 Cada carpeta contiene el código fuente (`.java`) correspondiente al ejercicio práctico.
-
----
-## Estructura del repositorio
-
