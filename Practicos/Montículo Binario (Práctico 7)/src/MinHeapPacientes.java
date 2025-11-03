@@ -1,9 +1,9 @@
 public class MinHeapPacientes {
-    Paciente[] heap;
+    PacienteMonticulo[] heap;
     int size;
 
     public MinHeapPacientes(int capacidad) {
-        heap = new Paciente[capacidad];
+        heap = new PacienteMonticulo[capacidad];
         size = 0;
     }
 
@@ -11,14 +11,14 @@ public class MinHeapPacientes {
         return size == 0;
     }
 
-    public void ingresar(Paciente p) {
+    public void ingresar(PacienteMonticulo p) {
         heap[size] = p;
         percolateUp(size);
         size++;
     }
 
-    public Paciente atender() {
-        Paciente min = heap[0];
+    public PacienteMonticulo atender() {
+        PacienteMonticulo min = heap[0];
         heap[0] = heap[size - 1];
         size--;
         percolateDown(0);
@@ -29,7 +29,7 @@ public class MinHeapPacientes {
         while (index > 0) {
             int parent = (index - 1) / 2;
             if (heap[index].prioridad < heap[parent].prioridad) {
-                Paciente temp = heap[index];
+                PacienteMonticulo temp = heap[index];
                 heap[index] = heap[parent];
                 heap[parent] = temp;
                 index = parent;
@@ -47,7 +47,7 @@ public class MinHeapPacientes {
             if (right < size && heap[right].prioridad < heap[smallest].prioridad) smallest = right;
 
             if (smallest != index) {
-                Paciente temp = heap[index];
+                PacienteMonticulo temp = heap[index];
                 heap[index] = heap[smallest];
                 heap[smallest] = temp;
                 index = smallest;

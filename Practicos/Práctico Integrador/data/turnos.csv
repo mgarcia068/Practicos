@@ -1,0 +1,7 @@
+id,dniPaciente,matriculaMedico,fechaHora,duracionMin,motivo
+T-001,32045982,M-001,2025-11-04T09:00,30,Control
+T-002,32458910,M-001,2025-11-04T09:30,30,ECG
+T-003,31247856,M-001,2025-11-04T10:00,30,Consulta general
+T-004,31890432,M-001,2025-11-04T10:30,30,Seguimiento post-op
+T-005,31111222,M-002,2025-11-04T09:00,45,Consulta traumatología
+T-006,32500890,M-003,2025-11-04T11:00,60,Evaluación neurológica
