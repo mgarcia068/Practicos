@@ -2,16 +2,16 @@ package src;
 
 import java.util.Scanner;
 
-public class main {
+public class Main {
 
     static Scanner sc = new Scanner(System.in);
     static int id = 0;
     static Pizzeria pedidos = new Pizzeria();
 
+
     public static void main(String[] args) {
         menu();
     }
-
     static void menu() {
         int opc = 0;
         do {
