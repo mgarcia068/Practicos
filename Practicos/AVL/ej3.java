@@ -15,14 +15,14 @@
     Esto garantiza que la altura del árbol AVL es O(logn) para n nodos.
  */
 
-public class Main(){
+public class ej3 {
     public static void main(String[] args) {
         AVLTree arbol = new AVLTree();
 
         int[] valores = {5, 10, 15, 20, 25, 30, 35};
 
         for(int val: valores){
-            arbol.insertar();
+            arbol.insertar(val);
             arbol.mostrar();
         }
     }

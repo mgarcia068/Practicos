@@ -79,47 +79,8 @@ class AVLTree {
         return nodo;
     }
 
-    Nodo insertar(int valor) {
-        if (nodo == null) {
-            System.out.println("Insertando " + valor);
-            return new NodoAVL(valor);
-        }
-
-        if (valor < nodo.valor)
-            nodo.izquierdo = insertar(nodo.izquierdo, valor);
-        else if (valor > nodo.valor)
-            nodo.derecho = insertar(nodo.derecho, valor);
-        else
-            return nodo; // No duplicados
-
-        actualizarAltura(nodo);
-
-        int fe = obtenerFE(nodo);
-
-        // --- Rotaciones ---
-        // LL
-        if (fe > 1 && valor < nodo.izquierdo.valor)
-            return rotarDerecha(nodo);
-
-        // RR
-        if (fe < -1 && valor > nodo.derecho.valor)
-            return rotarIzquierda(nodo);
-
-        // LR
-        if (fe > 1 && valor > nodo.izquierdo.valor) {
-            System.out.println("Rotación LR en nodo " + nodo.valor);
-            nodo.izquierdo = rotarIzquierda(nodo.izquierdo);
-            return rotarDerecha(nodo);
-        }
-
-        // RL
-        if (fe < -1 && valor < nodo.derecho.valor) {
-            System.out.println("Rotación RL en nodo " + nodo.valor);
-            nodo.derecho = rotarDerecha(nodo.derecho);
-            return rotarIzquierda(nodo);
-        }
-
-        return nodo;
+    public void insertar(int valor) {
+        raiz = insertar(raiz, valor);
     }
 
     // Mostrar el árbol (inorden con alturas y FE)

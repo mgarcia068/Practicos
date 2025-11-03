@@ -5,14 +5,14 @@
     c) Indique qué rotación se aplica en cada desbalance (LL o RR) y por qué.
 */
 
-public class Main(){
+public class ej1 {
     public static void main(String[] args) {
         AVLTree arbol = new AVLTree();
 
         int[] valores = {30, 20, 10, 40, 50, 60};
 
         for(int val: valores){
-            arbol.insertar();
+            arbol.insertar(val);
             arbol.mostrar();
         }
     }

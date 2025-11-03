@@ -1,8 +1,8 @@
 class Nodo {
     int altura;
-    int dato;
-    Nodo izq;
-    Nodo der;
+    int valor;
+    Nodo izquierdo;
+    Nodo derecho;
 
     public Nodo(int dato){
         this.valor = valor;
