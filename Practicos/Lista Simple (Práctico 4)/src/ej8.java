@@ -30,7 +30,7 @@ public class ej8 {
             return;
         }
 
-        Nodo actual = lista.getCabeza();
+        NodoListaSimple actual = lista.getCabeza();
         int indice = 0;
 
         while (actual != null && indice < pos - 1) {
@@ -39,7 +39,7 @@ public class ej8 {
         }
 
         if (actual != null) {
-            Nodo nuevoNodo = new Nodo(valor);
+            NodoListaSimple nuevoNodo = new NodoListaSimple(valor);
             nuevoNodo.siguiente = actual.siguiente;
             actual.siguiente = nuevoNodo;
         } else {

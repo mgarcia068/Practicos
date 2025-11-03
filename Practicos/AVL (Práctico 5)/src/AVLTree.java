@@ -1,27 +1,27 @@
 package src;
 
 class AVLTree {
-    Nodo raiz;
+    NodoAVL raiz;
 
     // Obtener altura
-    int altura(Nodo nodo) {
+    int altura(NodoAVL nodo) {
         return nodo == null ? 0 : nodo.altura;
     }
 
     // Calcular FE = altura izquierda - derecha
-    int obtenerFE(Nodo nodo) {
+    int obtenerFE(NodoAVL nodo) {
         return nodo == null ? 0 : altura(nodo.izquierdo) - altura(nodo.derecho);
     }
 
     // Actualizar altura
-    void actualizarAltura(Nodo nodo) {
+    void actualizarAltura(NodoAVL nodo) {
         nodo.altura = 1 + Math.max(altura(nodo.izquierdo), altura(nodo.derecho));
     }
 
     // Rotación simple a la derecha (LL)
-    Nodo rotarDerecha(Nodo y) {
-        Nodo x = y.izquierdo;
-        Nodo T2 = x.derecho;
+    NodoAVL rotarDerecha(NodoAVL y) {
+        NodoAVL x = y.izquierdo;
+        NodoAVL T2 = x.derecho;
 
         x.derecho = y;
         y.izquierdo = T2;
@@ -34,9 +34,9 @@ class AVLTree {
     }
 
     // Rotación simple a la izquierda (RR)
-    Nodo rotarIzquierda(Nodo x) {
-        Nodo y = x.derecho;
-        Nodo T2 = y.izquierdo;
+    NodoAVL rotarIzquierda(NodoAVL x) {
+        NodoAVL y = x.derecho;
+        NodoAVL T2 = y.izquierdo;
 
         y.izquierdo = x;
         x.derecho = T2;
@@ -49,10 +49,10 @@ class AVLTree {
     }
 
     // Insertar nodo
-    Nodo insertar(Nodo nodo, int valor) {
+    NodoAVL insertar(NodoAVL nodo, int valor) {
         if (nodo == null) {
             System.out.println("Insertando " + valor);
-            return new Nodo(valor);
+            return new NodoAVL(valor);
         }
 
         if (valor < nodo.valor)
@@ -86,7 +86,7 @@ class AVLTree {
     }
 
     // Mostrar el árbol (inorden con alturas y FE)
-    void mostrar(Nodo nodo) {
+    void mostrar(NodoAVL nodo) {
         if (nodo != null) {
             mostrar(nodo.izquierdo);
             System.out.println("Nodo: " + nodo.valor +

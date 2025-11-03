@@ -27,10 +27,10 @@ public class ej9 {
     }
 
     public static void eliminarDuplicados(listaEnlazada lista) {
-        Nodo actual = lista.getCabeza();
+        NodoListaSimple actual = lista.getCabeza();
 
         while (actual != null) {
-            Nodo runner = actual;
+            NodoListaSimple runner = actual;
             while (runner.siguiente != null) {
                 if (runner.siguiente.dato == actual.dato) {
                     runner.siguiente = runner.siguiente.siguiente; // Eliminar nodo duplicado

@@ -23,9 +23,9 @@ public class ej5 {
         boolean encontrado100 = buscar(lista, 100);
         System.out.println("¿Se encontró el 100? " + encontrado100);
     }
-
+    
     public static boolean buscar(listaEnlazada lista, int valor) {
-        Nodo actual = lista.getCabeza();
+        NodoListaSimple actual = lista.getCabeza();
         while (actual != null) {
             if (actual.dato == valor) {
                 return true; // Valor encontrado

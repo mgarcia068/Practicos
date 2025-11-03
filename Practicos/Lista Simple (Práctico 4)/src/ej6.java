@@ -22,7 +22,7 @@ public class ej6 {
 
     public static int contar(listaEnlazada lista) {
         int contador = 0;
-        Nodo actual = lista.getCabeza();
+        NodoListaSimple actual = lista.getCabeza();
         while (actual != null) {
             contador++;
             actual = actual.siguiente;

@@ -1,11 +1,11 @@
 package src;
-class Nodo {
+class NodoAVL {
     int altura;
     int valor;
-    Nodo izquierdo;
-    Nodo derecho;
+    NodoAVL izquierdo;
+    NodoAVL derecho;
 
-    public Nodo(int valor){
+    public NodoAVL(int valor){
         this.valor = valor;
         this.altura = 1;
     }
