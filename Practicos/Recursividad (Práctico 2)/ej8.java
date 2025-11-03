@@ -3,7 +3,6 @@
     arreglo de enteros.
 Ejemplo: [3, 5, 7, 9], buscar 7 → true. */
 
-package Practicos.recursividad;
 import java.util.Scanner;
 
 public class ej8 {

@@ -14,6 +14,7 @@
 
     Esto garantiza que la altura del árbol AVL es O(logn) para n nodos.
  */
+package src;
 
 public class ej3 {
     public static void main(String[] args) {

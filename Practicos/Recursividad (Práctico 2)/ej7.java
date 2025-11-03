@@ -2,7 +2,6 @@
     Escriba una función recursiva para calcular el n-ésimo número de Fibonacci.
     Discuta con la IA cómo mejorar la eficiencia (por ejemplo, con memoización). */
 
-package Practicos.recursividad;
 import java.util.Scanner;
 
 public class ej7 {

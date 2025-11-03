@@ -1,3 +1,4 @@
+package src;
 public enum EstadoTarea {
   COMPLETADO(1),
   PENDIENTE(2);

@@ -5,7 +5,6 @@ Ejemplo: [2, 4, 6, 8] → 20.
 👉 Extienda la solución para que además devuelva el promedio usando únicamente
 recursión. */
 
-package Practicos.recursividad;
 import java.util.Scanner;
 
 public class ej3 {

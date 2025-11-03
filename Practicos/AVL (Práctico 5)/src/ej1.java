@@ -4,6 +4,7 @@
     b) Calcule alturas y factor de equilibrio (FE) de cada nodo en cada paso.
     c) Indique qué rotación se aplica en cada desbalance (LL o RR) y por qué.
 */
+package src;
 
 public class ej1 {
     public static void main(String[] args) {

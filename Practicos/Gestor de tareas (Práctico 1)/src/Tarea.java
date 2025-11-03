@@ -1,3 +1,4 @@
+package src;
 public class Tarea {
   String descripcion;
   EstadoTarea estado;

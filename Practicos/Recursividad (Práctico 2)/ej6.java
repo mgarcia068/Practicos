@@ -3,7 +3,6 @@
 Cree una función recursiva que determine si una cadena es un palíndromo.
 Ejemplo: "neuquen" → true, "informatica" → false. */
 
-package Practicos.recursividad;
 import java.util.Scanner;
 
 public class ej6 {

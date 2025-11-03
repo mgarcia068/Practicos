@@ -3,7 +3,6 @@ Implemente de manera recursiva el algoritmo de Euclides para calcular el MCD de 
 números enteros positivos.
 Ejemplo: MCD(48, 18) = 6. */
 
-package Practicos.recursividad;
 import java.util.Scanner;
 
 public class ej4 {
